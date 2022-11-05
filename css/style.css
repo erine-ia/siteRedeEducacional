@@ -13,6 +13,9 @@ a{
     text-decoration: none;
     color:white;
 }
+li{
+    list-style: none;
+}
 
 .container{
     max-width: 1200px;
@@ -39,18 +42,49 @@ header{
 }
 
 
-.barra-menu{
+
+.barra-menu {
     background-color: rgba(255, 255, 255, 0.152);
     height: 80px;
     display: grid;
-    grid-template: 'logo ... menu ';
+    /* grid-template: 'logo ... menu ';
     align-content: space-around;
+    align-items: center; */
     position: fixed;
     top: 0;
     width: 100%;
-
-    
+    transition: all 3s ease-in;
       
+}
+
+
+.barra-menu .container{
+    display: grid;
+    grid-template: 'logo ... menu ';
+    align-content: space-around;
+    align-items: center;
+}
+
+.menu{
+  display: grid;
+  grid-auto-flow: column;
+  width: 100%;
+  text-align: center;
+    
+    
+}
+.link-menu{
+    gap: 7%;
+    font-size: 1.2em;
+    padding: 20% 0;
+    align-items: center;
+    align-content: center;
+    display: inline-grid;
+   
+}
+.link-menu:hover{
+    background-color: rgba(159, 44, 48, 0.77);
+  
 }
 
 .logo{
@@ -59,6 +93,13 @@ header{
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1.8em;
 }
+
+
+
+/* efeitos na barra de menu quando scroll */
+
+
+/* FIM de efeito no menu */
 
 .title{
     width: 40%;
@@ -73,7 +114,7 @@ header{
     font-size: 0.9em;
 }
 
-.title button{
+.title button, button{
     color: white;
     background-color: rgb(159, 44, 47);
     border: none;
@@ -140,4 +181,113 @@ header{
     grid-area: next;
     }
 
+.agenda{
+    width: 100%;
+    max-width: 1200px;
+    text-align: center;
+    color:white;
+    margin: 2% auto;
+}
 
+.agenda-main{
+    display: grid;
+    width: 100%;
+    grid-template: 
+    'lista eventos';
+    grid-template-columns: 30% 70%;
+    align-items: flex-start;
+ 
+    
+
+}
+
+.agenda-categorias{
+    width: 100%;
+    background-color: white;
+    color:#333;
+    padding:2%;
+    padding-bottom: 5%;
+    padding-top: 5%;
+    margin: 10% 0;
+    border-radius: 25px ;
+    grid-area: lista;
+    
+}
+.agenda-categorias ul{
+    text-align: left;
+    padding: 0 2% ;
+}
+
+.agenda-categorias li{
+    text-align: left;
+    padding: 2% 2% ;
+    
+}
+
+.agenda-categorias hr{
+   width: 100%;
+   margin: 5% auto;
+
+}
+
+.agenda-eventos{
+    grid-area: eventos;
+    display: flex;
+    flex-wrap: wrap;
+    flex-flow: wrap;
+    justify-content: space-around;
+    margin: 5% 0;
+  
+}
+
+.evento{
+    margin: 0 2%;
+    margin-bottom: 5%;
+    background-color: white;
+    color:#333;
+    border-radius: 25px;
+    padding-bottom: 5% ;
+    position: relative;
+    
+
+}
+
+.img-evento img{
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+}
+
+.preco-evento{
+    background-color: rgba(255, 255, 255, 0.818);
+    position: absolute;
+    left: 2%;
+    margin-top: 5%;
+    margin-left: 2%;
+    padding: 2% 3%;
+    font-weight: 700;
+    border-radius: 25px;
+}
+
+.info-evento{
+    display: grid;
+    grid-template-columns:20% 70% ;
+    grid-template-areas:'data info' ;
+    text-align: left;
+    padding-top: 5%;
+}
+
+.data-evento{
+    grid-area: data;
+    text-align: center;
+    font-weight: 900;
+    color: rgb(159, 44, 47);
+}
+
+.titulo-evento{
+    grid-area: info;
+    
+}
+
+.titulo-evento p{
+    padding-top: 5%;
+}
