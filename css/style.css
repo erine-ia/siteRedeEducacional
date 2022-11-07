@@ -291,3 +291,95 @@ header{
 .titulo-evento p{
     padding-top: 5%;
 }
+
+.parallax{
+        background-image: url('../images/apply-bg.jpg');background-attachment:fixed;
+    
+}
+.sobre{
+    display: flex;
+}
+
+.sobre-coluna1{
+    width: 50%;
+    color:white;
+    position: relative;
+    padding-top: 5%;
+  
+
+}
+
+.sobre-linha{
+    padding: 5% 7%;
+    background-color: rgba(255, 255, 255, 0.123);
+    width: 90%;
+    margin: 5% auto;
+}
+
+.sobre-linha h3{
+    padding-bottom: 5% ;
+}
+
+.sobre-linha p{
+    padding: 2%;
+    padding-bottom: 9%;
+}
+
+.sobre-linha:nth-child(2) button{
+    background-color: rgb(224, 113, 1);
+}
+
+.sobre-coluna2{
+    background-color: rgba(255, 255, 255, 0);
+    width: 40%;
+    height: fit-content;
+    padding-top: 8%;
+
+    
+}
+
+.sobre-linha-coluna2{
+    background-color: white;
+    padding: 5% 5%;
+    border-radius: 25px;
+    
+}
+
+.sobre-coluna2 ul{
+    text-align: justify;
+}
+
+.sobre-linha-coluna2 li{
+    padding: 5%;
+
+}
+
+.sobre-linha-coluna2 h3{
+    padding-bottom: 5%;
+    color:#333;
+
+}
+.sobre-linha-coluna2 h3::after{
+    content: '>';
+    font-size: 1.5em;
+    position: relative;
+    top:0.09em;
+    left: 15px;
+}
+
+.p-fechado{
+    position: relative;
+    display: none;
+    transition: all 3s ease-in-out;
+}
+
+.p-aberto{
+    padding-bottom: 5%;
+    color:#333;
+    text-indent: 20px;
+    display: block;
+    
+    
+}
+
+
