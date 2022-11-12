@@ -157,6 +157,7 @@ header{
 
 .bloco-meeting{
     background-image: url('../images/service-item-bg.jpg');
+    background-size: cover;
     width: 35%;
     float: left;
     margin: 0 1%;
@@ -357,11 +358,20 @@ header{
 .sobre-linha-coluna2 h3{
     padding-bottom: 5%;
     color:#333;
+    cursor: pointer;
+    
+    
 
 }
+.sobre-linha-coluna2 h3:active{
+    color:rgb(224, 113, 1)
+
+}
+
 .sobre-linha-coluna2 h3::after{
     content: '>';
     font-size: 1.5em;
+    color: black;
     position: relative;
     top:0.09em;
     left: 15px;
@@ -382,4 +392,139 @@ header{
     
 }
 
+.cursos{
+    color:white;
+    height: 100vh;
 
+}
+
+.cursos h2{
+    padding: 2% 0;
+}
+
+.blocos-cursos{
+    display: flex;
+    padding: 5% 0;
+}
+
+.curso{
+    margin: 0 1.5%;
+    background-color: white;
+}
+
+.info-curso{
+    color:#333;
+    background-color: white;
+    padding: 10%;
+    padding-bottom: 20%;
+}
+
+.info-curso h4{
+    padding: 5% 0;
+    padding-bottom: 10%;
+}
+
+.curso-preco{
+    color: rgb(159, 44, 47);
+    font-weight: 600;
+    float: right;
+    padding: 5%;
+}
+.status{
+    width: 20px;
+    height: 9px;
+    border-radius: 30%;
+    background-color: white;
+    position: relative;
+    margin: 0 auto;
+}
+.status::before{
+    content:'';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 200%;
+    border-radius: 45%;
+    background-color: rgb(255, 255, 255);
+}
+
+.status::after{
+    content:'';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    left: 130%;
+    border-radius: 45%;
+    background-color: rgb(255, 255, 255);
+}
+
+.fatos{
+    background-image: url("../images/facts-bg.jpg");
+    background-attachment: fixed;
+    padding-top: 10%;
+    width: 100%;
+    text-align: center;
+
+}
+.fatos-dados{
+   display: grid;
+    grid-auto-flow: column; 
+    gap: 10%;
+    width: 100%;
+    
+}
+
+.fatos h2{
+    color: white;
+    font-size: 2.4em;
+    width: 40%;
+    padding-left: 10%;
+}
+
+.dados{
+    width: 100%;
+    padding-left: 10%;
+    padding-top: 5%;
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 10%;
+}
+
+.dado-coluna1, .dado-coluna2{
+    margin: 2%;
+    background-color: rgba(255, 255, 255, 0.246);
+    width: 100%;
+    padding: 7%;
+    border-radius: 25px;
+    text-align: center;
+    font-weight: 600;
+    color:white;
+    font-size: 1.2em;
+    
+}
+
+.dados span {
+    color:rgb(224, 113, 1);
+    font-size: 2em;
+    padding-bottom:5%;
+
+}
+
+.video-fatos{
+    width: 60%;
+}
+
+.video-fatos img:nth-child(1){
+    width: 100%;
+    position: relative;
+ bottom: 10em;
+}
+
+
+.video-fatos img:nth-child(2){
+
+    position: absolute;
+    left: 60%;
+
+
+}
